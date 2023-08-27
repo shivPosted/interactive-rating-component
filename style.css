@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap") * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: hsl(25, 97%, 53%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+}
+
+.main-cards {
+  max-width: 35rem;
+  background-color: #252d37;
+  color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  height: 45%;
+  background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+.star-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2em;
+  margin-bottom: 2.4rem;
+  /* box-shadow: 1px 1px black; */
+  background-color: #2b363f;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.rating-score {
+  display: flex;
+  gap: 1.2rem;
+  width: 90%;
+}
+
+.rating-number {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background-color: #2b363f;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+  margin-left: auto;
+}
+
+.rating-number:hover {
+  background-color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  color: #fff;
+}
+
+.rating-number.clicked {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.submit {
+  width: 95%;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 100vw;
+  font-weight: 700;
+  text-align: center;
+  padding-block: 1.2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: auto;
+  transition: all 0.5s;
+}
+
+.submit:hover {
+  background-color: #fff;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.thank-you-card {
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+}
+.rating-main {
+  z-index: 2;
+}
+
+.display-rating-box {
+  background-color: #2b363f;
+  color: var(--color-primary);
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.6rem 2rem;
+  border-radius: 100vw;
+  margin-block: 1.6rem;
+  /* margin-bottom: 1.6rem; */
+}
+
+@media (max-width: 27em) {
+  html {
+    font-size: 55%;
+  }
+}
